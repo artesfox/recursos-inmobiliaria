@@ -1,0 +1,219 @@
+/*===ESTILOS GENERALES===*/
+body {
+    font-family: 'Poppins', sans-serif;
+  
+
+}
+/*===FIN ESTILOS GENERALES===*/
+
+/*===HEADER===*/
+
+.header{
+    box-shadow: 0px 0px 4px #ccc;
+    padding: 0 20px;
+    background: #fff;
+}
+
+.contenedor-header h1.logo a{
+	justify-content: center;
+    flex-direction: column;
+    display: flex;
+    padding: 10px 0;
+}
+
+.header .logo img{
+	max-height: 90px;
+    object-fit: contain;
+    max-width: 250px;
+
+}
+
+.header .menu ul{
+	list-style: none;
+	display: flex;
+	margin-bottom: 0;
+}
+
+.header .menu ul li a{
+	padding: 10px 15px;
+	color:#738695;
+	display: block;
+}
+@media (max-width: 850px) {
+.header .menu ul li a{
+	font-size: 12px;
+	padding: 10px 10px;
+
+}
+}
+
+/*===FIN HEADER===*/
+
+
+
+/*===BANNER INCIO*===*/
+
+
+
+.banner-inicio .contenedor{
+	background-image: linear-gradient(180deg, rgba(46, 46, 46, 0) 0%, rgba(6, 6, 6, 0.7) 100%), url(../imagenes/bg-2.jpg) !important;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	margin: auto;
+	max-width: 1300px;
+}
+
+
+.banner-inicio .contenedor h1, .banner-inicio .contenedor p{
+	color: #fff;
+}
+
+
+.banner-inicio .contenedor a.boton{
+background: var(--color-maestro);
+color:#fff;
+text-transform: uppercase;
+letter-spacing: 1px;
+font-size: 13px;
+font-weight: 600;
+max-width: max-content;
+}
+
+@media (min-width: 850px) {
+
+.banner-inicio .contenedor{
+	aspect-ratio: 16/7.5;
+	border-radius:10px;
+	padding: 3cqw;
+	background-repeat: no-repeat;
+
+}
+.banner-inicio .contenedor h1{
+	font-size: 3cqw;
+}
+.banner-inicio .contenedor p{
+	font-size: 20px;
+}
+
+.banner-inicio .contenedor a.boton{
+border-radius: 30px;
+padding: 20px 35px;
+
+}
+
+
+}
+
+@media (max-width: 850px) {
+.banner-inicio .contenedor{
+	aspect-ratio: 16/13;
+	border-radius:7px;
+	padding: 2cqw;
+
+ }
+ .banner-inicio .contenedor h1{
+	font-size: 6cqw;
+}
+
+.banner-inicio .contenedor p{
+	color: #fff;
+	font-size: 15px;
+}
+
+.banner-inicio .contenedor a.boton{
+background: var(--color-maestro);
+border-radius: 25px;
+padding: 10px 20px;
+}
+
+}
+/*===FIN BANNER INCIO*===*/
+
+/*===GRID DE PROPIEDADES===*/
+.propiedades{
+}
+.propiedades h2{
+	text-align: center;
+}
+
+
+.propiedades .grid-propiedades article{
+	box-shadow: 0px 2px 58px 6px rgba(21, 2, 42, 0.05);
+	padding: 20px;
+	border-radius: 10px;
+	background: #fff;
+	border:solid 2px var(--color-gris);
+}
+
+.propiedades .grid-propiedades article img {
+  border-radius: 10px;
+  aspect-ratio: 4/3;
+  width: 100%;
+  object-fit: cover;
+}
+
+.propiedades .grid-propiedades article .direccion{
+	color: var(--color-maestro);
+	text-decoration: none;
+	font-size: 16px;
+	display: block;
+	margin-top: 10px;
+}
+
+.propiedades .grid-propiedades article h2{
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 600;
+	text-align: left;
+	line-height: 1.3em;	
+	margin-top: 10px;
+}
+
+.propiedades .grid-propiedades article .detalle{
+	display: grid;
+    /* Cambiamos 1fr por auto */
+    grid-template-columns: auto auto auto auto; 
+    font-size: 17px;
+    margin-top: 20px;
+    /* Controlamos la separación con gap */
+    gap: 15px; 
+    /* Alineamos todo el bloque a la izquierda */
+    justify-content:space-between;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    padding: 15px 2px;
+}
+.propiedades .grid-propiedades article .precio{
+	margin-top: 30px;
+	font-weight: 800;
+	font-size: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.propiedades .grid-propiedades article .precio .detalle-link a{
+	font-size: 15px;
+	text-decoration: none;
+	color:var(--color-maestro);
+	font-weight: 400;
+}
+
+/*====FRID de srivicios====*/
+.servicios svg{
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin: auto;
+	margin-bottom: 20px;
+}
+.servicios article{
+	box-shadow: 0px 2px 58px 6px rgba(21, 2, 42, 0.05);
+	padding: 20px;
+	border-radius: 10px;
+	background: #fff;
+}
+/*====FRID de srivicios====*/
